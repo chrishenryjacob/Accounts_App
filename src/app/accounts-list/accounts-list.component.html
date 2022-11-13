@@ -1,1 +1,22 @@
-<p>accounts-list works!</p>
+<nz-table #basicTable [nzData]="dataSource">
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Payment Type</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{data.itemName}}</td>
+      <td>{{data.description}}</td>
+      <td>{{data.type}}</td>
+      <td>{{data.amount}}</td>
+      <td>{{data.paymentType}}</td>
+      <td>{{data.date | date : 'fullDate'}}</td>
+    </tr>
+  </tbody>
+</nz-table>

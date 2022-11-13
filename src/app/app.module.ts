@@ -23,6 +23,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 import { AccountsFormComponent } from './accounts-form/accounts-form.component';
 import { AccountsListComponent } from './accounts-list/accounts-list.component';
@@ -53,7 +54,8 @@ registerLocaleData(en);
     NzSelectModule,
     NzPopconfirmModule,
     NzFormModule,
-    NzDividerModule
+    NzDividerModule,
+    NzTableModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
