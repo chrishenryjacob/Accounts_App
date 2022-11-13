@@ -22,13 +22,15 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
 import { AccountsFormComponent } from './accounts-form/accounts-form.component';
+import { AccountsListComponent } from './accounts-list/accounts-list.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccountsFormComponent
+    AccountsFormComponent,
+    AccountsListComponent
   ],
   imports: [
     BrowserModule,
