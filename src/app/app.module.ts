@@ -6,7 +6,7 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -19,8 +19,11 @@ import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+
 import { AccountsFormComponent } from './accounts-form/accounts-form.component';
 import { AccountsListComponent } from './accounts-list/accounts-list.component';
 
@@ -35,6 +38,7 @@ registerLocaleData(en);
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     NzPageHeaderModule,
@@ -46,8 +50,10 @@ registerLocaleData(en);
     NzIconModule,
     NzButtonModule,
     NzDatePickerModule,
-    NzDropDownModule,
-    NzPopconfirmModule
+    NzSelectModule,
+    NzPopconfirmModule,
+    NzFormModule,
+    NzDividerModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
