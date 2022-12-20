@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Accounts_App';
+  title = "Accounts App"
+  isLoggedIn: boolean = true;
 }
